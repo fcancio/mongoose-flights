@@ -4,7 +4,14 @@ module.exports = {
     index,
     new: newFlight,
     create,
+    show
 };
+
+function show(req, res) {
+    Flight.findById(req.params.id, function(err, flight) {
+      res.render('flights/show', { title: 'Flight Detail', flight });
+    });
+  }
 
 function create(req, res) {
     var flight = new Flight(req.body);
