@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<section id="show-page">
+<section>
   <div>Airline: <%= flight.airline %></div>
   <div>Flight No: <%= flight.flightNo %></div>
   <div>Departs: <%= flight.departs %></div>
@@ -30,8 +30,8 @@
     <table class="destinations-table">
       <thead>
         <tr>
-          <th>Airport</th>
-          <th>Arrival</th>
+          <th class="destinations-th">Airport</th>
+          <th class="destinations-th">Arrival</th>
         </tr>
       </thead>
       <tbody>

@@ -12,8 +12,8 @@
 <body>
     <nav>
         <a href="/" class="logo-nav"><img src="images/hellokitty_logo.jpeg" class="logo" height="50px"></a>
-        <a href="/flights" class="nav-text" <%- title === 'All Flights' ? 'class="active"' : '' %>>ALL FLIGHTS</a>
-        <a href="/flights/new" class="nav-text" <%- title === 'Add Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a>
+        <a class="nav-text" href="/flights" <%- title === 'All Flights' ? 'class="active"' : '' %>>ALL FLIGHTS</a>
+        <a class="nav-text" href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a>
     </nav>
   <main>
     <h1><%= title %></h1>
