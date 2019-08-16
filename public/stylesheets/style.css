@@ -171,3 +171,8 @@ tbody tr:nth-child(2n-1) {
   left: 100px;
   top: 10px;
 }            
+
+.error {
+  background-image: url('/images/rickandmorty.gif')
+  background-size: cover;
+}
