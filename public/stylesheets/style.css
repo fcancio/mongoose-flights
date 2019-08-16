@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: 'Roboto Mono', monospace;
   color: #4C82A3;
   font-weight: 400;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: black;
+  color: 4C82A3;
 }
 
 nav {
@@ -37,10 +37,19 @@ nav a {
   margin: 0 20px;
 }
 
-nav a:hover {
+th a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+th a:hover {
+  border-bottom: 5px solid #97E4FF;
+}
+
+/* nav a:hover {
   background-color: white;
   color: #97E4FF;
-}
+} */
 
 main {
   grid-area: main;
@@ -55,6 +64,12 @@ main {
 h1 {
   color: #97E4FF;
   font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #4C82A3;
+  font-family: 'Pacifico', cursive;
 }
 
 .welcome {
@@ -63,7 +78,69 @@ h1 {
   font-size: 50px;
 }
 
-.active {
+.active, nav a:hover {
   font-weight: bolder;
   border: 4px solid white;
 }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #97E4FF;
+}
+
+thead {
+  background-color: #97E4FF;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+thead th:nth-child(2) {
+  width: 70%;
+}
+
+.destinations-table {
+text-align: center;
+}
+
+thead th:nth-child(3) {
+  width: 40%;
+}
+
+thead th:nth-child(4) {
+  width: 20%;
+}
+
+th {
+  padding: 8px;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: whitesmoke;
+}
+
+tbody tr:nth-child(2n-1) {
+  background-color: white;
+}
+
+#add-destination-form {
+  position: relative;
+  width  : 300px;
+  height : 100px;
+}
+
+.button {
+  position: relative;
+  left: 100px;
+  top: 10px;
+}            

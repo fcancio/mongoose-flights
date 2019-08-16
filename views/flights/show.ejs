@@ -2,10 +2,11 @@
 
 <section id="show-page">
   <div>Airline: <%= flight.airline %></div>
-  <div>Flight No.: <%= flight.flightNo %></div>
+  <div>Flight No: <%= flight.flightNo %></div>
   <div>Departs: <%= flight.departs %></div>
   <div>Airport: <%= flight.airport %></div>
 </section>
+
 
 <br><br><h2>Destinations</h2>
 <form id="add-destination-form" method="POST"
@@ -18,14 +19,15 @@
         <option value="LAX">LAX</option>
         <option value="AUS">AUS</option>
   </select>
+  <br>
   <label>Arrival:</label>
   <input type="datetime-local" name="arrival">
-  <input type="submit" value="Add Destination">
+  <br>
+  <input type="submit" value="Add Destination" class="button">
 </form>
 
-
 <% if (flight.destinations.length) { %>
-    <table>
+    <table class="destinations-table">
       <thead>
         <tr>
           <th>Airport</th>
