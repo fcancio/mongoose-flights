@@ -160,7 +160,8 @@ tbody tr:nth-child(2n-1) {
   background-color: white;
 }
 
-#add-destination-form {
+#add-destination-form
+#add-ticket-form {
   position: relative;
   width  : 300px;
   height : 100px;
@@ -173,6 +174,6 @@ tbody tr:nth-child(2n-1) {
 }            
 
 .error {
-  background-image: url('/images/rickandmorty.gif')
+  background-image: url('/images/rickandmorty.gif');
   background-size: cover;
 }
