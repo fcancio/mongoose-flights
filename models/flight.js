@@ -25,7 +25,8 @@ var flightSchema = new Schema({
     departs: {
         type: Date,
         // default: function() {
-        //     return new Date().oneYearFromDateCreated();
+            // var defaultDate = setFullYear()
+            // return defaultDate.getFulYear(yearValue + 1[, monthValue[, dateValue]])
     },
     airport: {
         type: String,
