@@ -5,7 +5,8 @@
 }
 
 #homepage {
-  background-image: url(/images/hellokitty_bg2.png);
+  background-image: url(/images/hellokitty_attendant.png);
+  /* background-color: #b2e0f1; */
   position: relative;
   background-size: auto;
   background-repeat: no-repeat;
@@ -98,8 +99,9 @@ h2 {
 
 .welcome {
   text-align: center;
+  color: #97E4FF;
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 75px;
   text-shadow: -1px -1px 2px #4C82A3;
 }
 
@@ -162,6 +164,7 @@ tbody tr:nth-child(2n):hover {
 .flight-details {
   border: 2px solid #97E4FF;
   padding: 5px 20px;
+  background-image: url('/images/clouds.jpg')
 }
 
 #add-destination-form {
