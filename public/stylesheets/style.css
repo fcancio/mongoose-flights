@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   color: #4C82A3;
-  font-weight: 400;
 }
 
 #homepage {
@@ -71,14 +70,9 @@ th a {
   font-size: 12px;
 }
 
-th a:hover {
-  border-bottom: 5px solid #97E4FF;
+#details-button:hover {
+  border-bottom: 4px solid white;
 }
-
-/* nav a:hover {
-  background-color: white;
-  color: #97E4FF;
-} */
 
 main {
   grid-area: main;
@@ -94,7 +88,7 @@ h1 {
   color: #97E4FF;
   font-family: 'Pacifico', cursive;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 2px #4C82A3;
+  text-shadow: -1px -1px 2px #4C82A3;
 }
 
 h2 {
@@ -106,7 +100,7 @@ h2 {
   text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
-  text-shadow: 1px 1px 2px #4C82A3;
+  text-shadow: -1px -1px 2px #4C82A3;
 }
 
 
@@ -137,15 +131,15 @@ thead th:nth-child(4) {
   width: 15%;
 }
 
-.destinations-table {
+.destinations-table, .tickets-table {
 text-align: center;
 }
 
 .destinations-th:nth-child(1) {
-  width: 30%;
+  width: 45%;
 }
 .destinations-th:nth-child(2) {
-  width: 70%;
+  width: 55%;
 }
 
 th {
@@ -160,20 +154,81 @@ tbody tr:nth-child(2n-1) {
   background-color: white;
 }
 
-#add-destination-form
-#add-ticket-form {
-  position: relative;
-  width  : 300px;
-  height : 100px;
+tbody tr:nth-child(2n-1):hover,
+tbody tr:nth-child(2n):hover {
+  background-color: #97E4FF;
 }
 
-.button {
-  position: relative;
-  left: 100px;
-  top: 10px;
-}            
+.flight-details {
+  border: 2px solid #97E4FF;
+  padding: 5px 20px;
+}
 
-.error {
-  background-image: url('/images/rickandmorty.gif');
-  background-size: cover;
+#add-destination-form {
+  display: grid;
+  grid-template-columns: 100px 225px;
+  grid-template-rows: 30px 30px 30px;
+  grid-template-areas:
+  "label select"
+  "label select"
+  "button button";
+  justify-content: center;
+  align-items: center;
+}
+
+#add-destination-button {
+  grid-area: button;
+  color: #4C82A3;
+}
+
+#add-destination-button:hover,
+#add-ticket-button:hover,
+#submit-ticket-button:hover {
+  background-color: #97E4FF;
+  font-weight: bolder;
+  border-bottom: 3px solid white;
+}
+
+#Destinations {
+  border-top: 2px dotted #4C82A3;
+  border-bottom: 2px dotted #4C82A3;
+}
+
+#Destinations:hover,
+#Tickets:hover {
+  background-color: whitesmoke;
+}
+
+#add-ticket-form {
+  display: grid;
+  grid-template-columns: 100px 225px;
+  grid-template-rows: 30px 30px 30px;
+  grid-template-areas:
+  "label input"
+  "label input"
+  "button button";
+  justify-content: center;
+  align-items: center;
+}
+
+#submit-ticket-button {
+  grid-area: button;
+}
+
+#add-flight-form {
+  display: grid;
+  grid-template-columns: 100px 225px;
+  grid-template-rows: 30px 30px 30px 30px 30px;
+  grid-template-areas:
+  "label input"
+  "label input"
+  "label input"
+  "label input"
+  "button button";
+  justify-content: center;
+  align-items: center;
+}
+
+#submit-flight-button {
+  grid-area: button;
 }
