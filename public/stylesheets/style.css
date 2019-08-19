@@ -183,7 +183,8 @@ tbody tr:nth-child(2n):hover {
 
 #add-destination-button:hover,
 #add-ticket-button:hover,
-#submit-ticket-button:hover {
+#submit-ticket-button:hover,
+#submit-flight-button:hover {
   background-color: #97E4FF;
   font-weight: bolder;
   border-bottom: 3px solid white;
@@ -211,10 +212,6 @@ tbody tr:nth-child(2n):hover {
   align-items: center;
 }
 
-#submit-ticket-button {
-  grid-area: button;
-}
-
 #add-flight-form {
   display: grid;
   grid-template-columns: 100px 225px;
@@ -229,6 +226,7 @@ tbody tr:nth-child(2n):hover {
   align-items: center;
 }
 
+#submit-ticket-button,
 #submit-flight-button {
   grid-area: button;
 }
